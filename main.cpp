@@ -24,7 +24,7 @@ int main() {
     cout << "---Initializer_list/for_auto---" << endl;
     auto A1 = A{1,2,3,4,5};
 
-    for(auto b:A1)
+    for(const auto &b:A1)
         b.print();
 
     cout << "---Bye, bye!---" << endl;
